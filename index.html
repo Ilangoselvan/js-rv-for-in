@@ -1,0 +1,40 @@
+<!doctype.html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="css">
+	<meta name="keywords" content="css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>js-rv-for-in loop</title>
+</head>
+<body>
+<h1>for in</h1>
+
+for in iterate properties of an object or array
+returns only index position<br><br>
+
+
+SYNTAX:for (variable in object/array);
+       statement
+
+
+<script>
+let colors=["pink","blue","black"];
+ for(let key in colors){
+	console.log(key); //o/p 0 1 2 
+	 console.log(colors[key]); //o/p pink blue black  
+ }
+
+
+const person={
+	f_name:"ilango",
+	l_name:"selvan",
+};
+for(const key in person){
+	console.log(person[key]);  //o/p ilango 	selvan
+	console.log(key);  //o/p f_name  l_name								
+}
+
+</script>
+</body>
+</html>
